@@ -1,1 +1,1248 @@
-three
+           .-------------------------:                      bubblegum@coco
+          .+=========================.                    --------------
+         :++===++==================-       :++-           OS: CachyOS x86_64
+        :*++====+++++=============-        .==:           Host: 83GS (LOQ 15IAX9)
+       -*+++=====+***++==========:                        Kernel: Linux 7.2.9-2-cachyos
+      =*++++========------------:                         Uptime: 9 hours, 2 mins
+     =*+++++=====-                     ...                Packages: 1320 (pacman)
+   .+*+++++=-===:                    .=+++=:              Shell: fish 4.9.3
+  :++++=====-==:                     -*****+              Display (AUO7EAD): 1920x1080 in 16", 144 Hz [Built-in]
+ :++========-=.                      .=+**+.              Desktop Environment: KDE Plasma 6.7.5
+.+==========-.                          .                 Window Manager: KWin (Wayland)
+ :+++++++====-                                .--==-.     WM Theme: Breeze
+  :++==========.                             :+++++++:    Theme: Breeze (Dark) [Qt], Breeze-Dark [GTK2], Breeze [GTK3/4]
+   .-===========.                            =*****+*+    Icons: breeze-dark [Qt], breeze-dark [GTK2/3/4]
+    .-===========:                           .+*****+:    Font: Noto Sans (10pt) [Qt], Noto Sans (10pt) [GTK2/3/4]
+      -=======++++:::::::::::::::::::::::::-:  .---:      Cursor: Breeze_Light (24px)
+       :======++++====+++******************=.             Terminal: alacritty 0.17.0
+        :=====+++==========++++++++++++++*-               Terminal Font: monospace (12.0pt, Regular)
+         .====++==============++++++++++*-                CPU: 12th Gen Intel(R) Core(TM) i5-12450HX (8+4) @ 4.40 GHz
+          .===+==================+++++++:                 GPU 1: NVIDIA GeForce RTX 3050 6GB Laptop GPU [Discrete]
+           .-=======================+++:                  GPU 2: Intel UHD Graphics @ 1.30 GHz [Integrated]
+             ..........................                   Memory: 10.64 GiB / 15.32 GiB (69%)
+                                                          Swap: 97.74 MiB / 15.32 GiB (1%)
+                                                          Disk (/): 111.80 GiB / 464.44 GiB (24%) - ext4
+                                                          Local IP (wlan0): 172.25.1.55/23
+                                                          Battery (L23M4PK4): 76% [AC Connected]
+                                                          Locale: en_IN
+
+
+
+~
+❯ git --version
+git version 2.56.0
+
+~
+❯ cd Desktop
+
+~/Desktop
+❯ mkdir git-one
+
+~/Desktop
+❯ cd git-one
+
+~/Desktop/git-one
+❯ touch one.txt
+
+~/Desktop/git-one
+❯ touch two.txt
+
+~/Desktop/git-one
+❯ mkdir myFolder
+
+~/Desktop/git-one
+❯ cd myFolder/
+
+~/Desktop/git-one/myFolder
+❯ touch three.txt
+
+~/Desktop/git-one/myFolder
+❯ cd ..
+
+~/Desktop/git-one
+❯ open ..
+
+~/Desktop/git-one
+❯ cd myFolder/
+
+~/Desktop/git-one/myFolder
+❯ open ..
+
+~/Desktop/git-one/myFolder
+❯ open
+open: Expected at least 1 args, got only 0
+
+~/Desktop/git-one/myFolder
+❯ open ..
+
+~/Desktop/git-one/myFolder
+❯ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in /home/bubblegum/Desktop/git-one/myFolder/.git/
+
+~/Desktop/git-one/myFolder master*
+❯ cd ..
+
+~/Desktop/git-one
+❯ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in /home/bubblegum/Desktop/git-one/.git/
+
+~/Desktop/git-one master*
+❯ ls
+drwxr-xr-x - bubblegum 24 Oct 01:13  .git
+drwxr-xr-x - bubblegum 24 Oct 01:13  myFolder
+.rw-r--r-- 4 bubblegum 24 Oct 01:11  one.txt
+.rw-r--r-- 4 bubblegum 24 Oct 01:11  two.txt
+
+~/Desktop/git-one master*
+❯ cd ../
+
+~/Desktop
+❯ git clone https://github.com/Half-Onion/git-journey.git
+Cloning into 'git-journey'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (6/6), done.
+
+~/Desktop
+❯ ls
+drwxr-xr-x    - bubblegum 24 Oct 01:20  git-journey
+drwxr-xr-x    - bubblegum 24 Oct 01:13  git-one
+drwxr-xr-x    - bubblegum 20 Oct 01:35  jc
+drwxr-xr-x    - bubblegum 16 Oct 00:09  'MERN Folder'
+.rw-r--r--   50 bubblegum  8 Oct 08:01  .directory
+.rwxr-xr-x  351 bubblegum 10 Oct 16:08  chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop
+.rw-r--r--  99k bubblegum 22 Oct 18:06  LeetCode_Patterns_Tracker.html
+.rwx--x--x 7.6k bubblegum 17 Oct 00:04  steam.desktop
+
+~/Desktop
+❯ cd git-journey/
+
+~/Desktop/git-journey main
+❯ ls
+drwxr-xr-x - bubblegum 24 Oct 01:21  .git
+.rw-r--r-- 4 bubblegum 24 Oct 01:20  one.txt
+.rw-r--r-- 4 bubblegum 24 Oct 01:20  two.txt
+
+~/Desktop/git-journey main
+❯ ls -a
+drwxr-xr-x - bubblegum 24 Oct 01:20  .
+drwxr-xr-x - bubblegum 24 Oct 01:20  ..
+drwxr-xr-x - bubblegum 24 Oct 01:21  .git
+.rw-r--r-- 4 bubblegum 24 Oct 01:20  one.txt
+.rw-r--r-- 4 bubblegum 24 Oct 01:20  two.txt
+
+~/Desktop/git-journey main
+❯  git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   one.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+~/Desktop/git-journey main*
+❯ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   one.txt
+	modified:   two.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+~/Desktop/git-journey main*
+❯ mkdir myFolder
+
+~/Desktop/git-journey main*
+❯ cd myFolder/
+
+~/Desktop/git-journey/myFolder main*
+❯ touch three.txt
+
+~/Desktop/git-journey/myFolder main*
+❯ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   ../one.txt
+	modified:   ../two.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	./
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+~/Desktop/git-journey/myFolder main*
+❯ cd..
+fish: Unknown command: cd..
+
+~/Desktop/git-journey/myFolder main*
+❯ cd ..
+
+~/Desktop/git-journey main*
+❯ git add --all
+
+~/Desktop/git-journey main*
+❯ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   myFolder/three.txt
+	modified:   one.txt
+	modified:   two.txt
+
+
+~/Desktop/git-journey main*
+❯ git reset
+Unstaged changes after reset:
+M	one.txt
+M	two.txt
+
+~/Desktop/git-journey main*
+❯ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   one.txt
+	modified:   two.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	myFolder/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+~/Desktop/git-journey main*
+❯ git add --all
+
+~/Desktop/git-journey main*
+❯ git reset
+Unstaged changes after reset:
+M	one.txt
+M	two.txt
+
+~/Desktop/git-journey main*
+❯ git add .
+
+~/Desktop/git-journey main*
+❯ git reset
+Unstaged changes after reset:
+M	one.txt
+M	two.txt
+
+~/Desktop/git-journey main*
+❯ cd myFolder/
+
+~/Desktop/git-journey/myFolder main*
+❯ git add .
+
+~/Desktop/git-journey/myFolder main*
+❯ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   three.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   ../one.txt
+	modified:   ../two.txt
+
+
+~/Desktop/git-journey/myFolder main*
+❯ git reset
+Unstaged changes after reset:
+M	one.txt
+M	two.txt
+
+~/Desktop/git-journey/myFolder main*
+❯ cd ..
+
+~/Desktop/git-journey main*
+❯ git add --all
+
+~/Desktop/git-journey main*
+❯ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   myFolder/three.txt
+	modified:   one.txt
+	modified:   two.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    two.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	four.txt
+
+
+~/Desktop/git-journey main*
+❯ git add *
+
+~/Desktop/git-journey main*
+❯ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   four.txt
+	new file:   myFolder/three.txt
+	modified:   one.txt
+	modified:   two.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    two.txt
+
+
+~/Desktop/git-journey main*
+❯ git reset
+Unstaged changes after reset:
+M	one.txt
+D	two.txt
+
+~/Desktop/git-journey main*
+❯ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   one.txt
+	deleted:    two.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	four.txt
+	myFolder/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+~/Desktop/git-journey main*
+❯ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+
+~/Desktop/git-journey main*
+❯ git add .
+
+~/Desktop/git-journey main*
+❯ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   four.txt
+	new file:   myFolder/three.txt
+	modified:   one.txt
+	deleted:    two.txt
+
+
+~/Desktop/git-journey main*
+❯ git commit -m"i am making a commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'bubblegum@coco.(none)')
+
+~/Desktop/git-journey main*
+❯ git config --global user.email "gaurav_2441009@sliet.ac.in"
+
+~/Desktop/git-journey main*
+❯ git config --global user.name "Half-Onion"
+
+~/Desktop/git-journey main*
+❯ git commit -m"i am making a commit"
+[main 67e12dc] i am making a commit
+ 4 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 four.txt
+ create mode 100644 myFolder/three.txt
+ delete mode 100644 two.txt
+
+~/Desktop/git-journey main ⇡
+❯ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+~/Desktop/git-journey main ⇡
+❯ git reset HEAD~
+Unstaged changes after reset:
+M	one.txt
+D	two.txt
+
+~/Desktop/git-journey main*
+❯ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   one.txt
+	deleted:    two.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	four.txt
+	myFolder/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+~/Desktop/git-journey main*
+❯ git add .
+
+~/Desktop/git-journey main*
+❯ git commit -m"i am making a second commit"
+[main 75198ee] i am making a second commit
+ 4 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 four.txt
+ create mode 100644 myFolder/three.txt
+ delete mode 100644 two.txt
+
+~/Desktop/git-journey main ⇡
+❯ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    one.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+~/Desktop/git-journey main* ⇡
+❯ git add .
+
+~/Desktop/git-journey main* ⇡
+❯ git rm four.txt
+rm 'four.txt'
+
+~/Desktop/git-journey main* ⇡
+❯ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	deleted:    four.txt
+	deleted:    one.txt
+
+
+~/Desktop/git-journey main* ⇡
+❯ git reset
+Unstaged changes after reset:
+D	four.txt
+D	one.txt
+
+~/Desktop/git-journey main* ⇡
+❯ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    four.txt
+	deleted:    one.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+~/Desktop/git-journey main* ⇡
+❯ git reset --HARD
+error: unknown option `HARD'
+usage: git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]
+   or: git reset [-q] [<tree-ish>] [--] <pathspec>...
+   or: git reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<tree-ish>]
+   or: git reset --patch [<tree-ish>] [--] [<pathspec>...]
+
+    -q, --[no-]quiet      be quiet, only report errors
+    --no-refresh          skip refreshing the index after reset
+    --refresh             opposite of --no-refresh
+    --mixed               reset HEAD and index
+    --soft                reset only HEAD
+    --hard                reset HEAD, index and working tree
+    --merge               reset HEAD, index and working tree
+    --keep                reset HEAD but keep local changes
+    --[no-]recurse-submodules[=<reset>]
+                          control recursive updating of submodules
+    -p, --[no-]patch      select hunks interactively
+    --[no-]auto-advance   auto advance to the next file when selecting hunks interactively
+    -U, --unified <n>     generate diffs with <n> lines context
+    --inter-hunk-context <n>
+                          show context between diff hunks up to the specified number of lines
+    -N, --[no-]intent-to-add
+                          record only the fact that removed paths will be added later
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+~/Desktop/git-journey main* ⇡
+❯ git reset --hard
+HEAD is now at 75198ee i am making a second commit
+
+~/Desktop/git-journey main ⇡
+❯ git rm four.txt
+error: the following file has local modifications:
+    four.txt
+(use --cached to keep the file, or -f to force removal)
+
+~/Desktop/git-journey main* ⇡
+❯ git add . four.txt
+
+~/Desktop/git-journey main* ⇡
+❯ git rm four.txt
+error: the following file has changes staged in the index:
+    four.txt
+(use --cached to keep the file, or -f to force removal)
+
+~/Desktop/git-journey main* ⇡
+❯ git rm -f four.txt
+rm 'four.txt'
+
+~/Desktop/git-journey main* ⇡
+❯ git reset --hard
+HEAD is now at 75198ee i am making a second commit
+
+~/Desktop/git-journey main ⇡
+❯ git rm -cached four.txt
+error: did you mean `--cached` (with two dashes)?
+
+~/Desktop/git-journey main* ⇡
+❯ git rm --cached four.txt
+rm 'four.txt'
+
+~/Desktop/git-journey main* ⇡
+❯ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	deleted:    four.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	four.txt
+
+
+~/Desktop/git-journey main* ⇡
+❯ git rm -r git-journey
+fatal: pathspec 'git-journey' did not match any files
+
+~/Desktop/git-journey main* ⇡
+❯ git reset --hard
+HEAD is now at 75198ee i am making a second commit
+
+~/Desktop/git-journey main ⇡
+❯ git rm -r git-journey
+fatal: pathspec 'git-journey' did not match any files
+
+~/Desktop/git-journey main ⇡
+❯ cd ..
+
+~/Desktop
+❯ git rm -r git-journey
+fatal: not a git repository (or any of the parent directories): .git
+
+~/Desktop
+❯ cd git-journey/
+
+~/Desktop/git-journey main ⇡
+❯ git rm -r myFolder/
+rm 'myFolder/three.txt'
+
+~/Desktop/git-journey main* ⇡
+❯ ls
+drwxr-xr-x  - bubblegum 24 Oct 02:34  .git
+.rw-r--r--  0 bubblegum 24 Oct 02:33  four.txt
+.rw-r--r-- 11 bubblegum 24 Oct 01:46  one.txt
+
+~/Desktop/git-journey main* ⇡
+❯ git reset --hard
+HEAD is now at 75198ee i am making a second commit
+
+~/Desktop/git-journey main ⇡
+❯ git log
+commit 75198eec7792da022c276b3b74fb8f9e76d05499 (HEAD -> main)
+Author: Half-Onion <gaurav_2441009@sliet.ac.in>
+Date:   Sat Oct 24 01:43:43 2026 +0530
+
+    i am making a second commit
+
+commit 4299fe13e24a44f93f676d2872cd38516b2ad5d9 (origin/main, origin/HEAD)
+Author: Gaurav Joshi <gaurav_2441009@sliet.ac.in>
+Date:   Sat Oct 24 01:18:48 2026 +0530
+
+    add Create two.txt
+
+commit 9d08d2bfe4885501a6b410985e09dac04308f55f
+Author: Gaurav Joshi <gaurav_2441009@sliet.ac.in>
+Date:   Sat Oct 24 01:18:20 2026 +0530
+
+    add Create one.txt
+
+~/Desktop/git-journey main ⇡
+❯ git log --oneLine
+fatal: unrecognized argument: --oneLine
+
+~/Desktop/git-journey main ⇡
+❯ git log --oneline
+75198ee (HEAD -> main) i am making a second commit
+4299fe1 (origin/main, origin/HEAD) add Create two.txt
+9d08d2b add Create one.txt
+
+~/Desktop/git-journey main ⇡
+❯ git branch
+* main
+
+~/Desktop/git-journey main ⇡
+❯ git branch devlopment
+
+~/Desktop/git-journey main ⇡
+❯ git branch
+  devlopment
+* main
+
+~/Desktop/git-journey main ⇡
+❯ git checkout development
+error: pathspec 'development' did not match any file(s) known to git
+
+~/Desktop/git-journey main ⇡
+❯ git checkout devlopment
+Switched to branch 'devlopment'
+
+~/Desktop/git-journey devlopment
+❯ git status
+On branch devlopment
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	three.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+~/Desktop/git-journey devlopment*
+❯ git add .
+
+~/Desktop/git-journey devlopment*
+❯ git commit -m"i am making a third commit"
+[devlopment 6c966d3] i am making a third commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 three.txt
+
+~/Desktop/git-journey devlopment
+❯ git checkout mian
+error: pathspec 'mian' did not match any file(s) known to git
+
+~/Desktop/git-journey devlopment
+❯ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+~/Desktop/git-journey main ⇡
+❯ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   four.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+~/Desktop/git-journey main* ⇡
+❯ git add .
+
+~/Desktop/git-journey main* ⇡
+❯ git commit -m"i am making a third commit"
+[main 32a39f6] i am making a third commit
+ 1 file changed, 1 insertion(+)
+
+~/Desktop/git-journey main ⇡
+❯ git checkout d
+error: pathspec 'd' did not match any file(s) known to git
+
+~/Desktop/git-journey main ⇡
+❯ git checkout devlopment
+Switched to branch 'devlopment'
+
+~/Desktop/git-journey devlopment
+❯ git merge main -m"merging devlopment in main"
+Merge made by the 'ort' strategy.
+ four.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+~/Desktop/git-journey devlopment
+❯ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+~/Desktop/git-journey main ⇡
+❯ git merge devlopment -m"merging main into devlopment"
+Updating 32a39f6..45b32f0
+Fast-forward (no commit created; -m option ignored)
+ three.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 three.txt
+
+~/Desktop/git-journey main ⇡
+❯ git branch staging
+
+~/Desktop/git-journey main ⇡
+❯ git checkout staging
+Switched to branch 'staging'
+
+~/Desktop/git-journey staging
+❯ git status
+On branch staging
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   four.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+~/Desktop/git-journey staging*
+❯ git add .
+
+~/Desktop/git-journey staging*
+❯ git commit -m"i am making a third commit"
+[staging 9b27ec9] i am making a third commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+~/Desktop/git-journey staging
+❯ git checkout devlopment
+Switched to branch 'devlopment'
+
+~/Desktop/git-journey devlopment
+❯ git commit -m"i am making a third commit"
+On branch devlopment
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   four.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+~/Desktop/git-journey devlopment*
+❯ git add .
+
+~/Desktop/git-journey devlopment*
+❯ git commit -m"i am making a third commit"
+[devlopment 033acf5] i am making a third commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+~/Desktop/git-journey devlopment
+❯ git merge staging
+Auto-merging four.txt
+CONFLICT (content): Merge conflict in four.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+~/Desktop/git-journey devlopment*
+❯ git add .
+
+~/Desktop/git-journey devlopment*
+❯ git commit -m"conflict solved"
+[devlopment 4b1e3ae] conflict solved
+
+~/Desktop/git-journey devlopment
+❯ git checkout staging
+Switched to branch 'staging'
+
+~/Desktop/git-journey staging
+❯ git merge devlopment -m"merging main into devlopment"
+Updating 9b27ec9..4b1e3ae
+Fast-forward (no commit created; -m option ignored)
+ four.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+~/Desktop/git-journey staging
+❯ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+~/Desktop/git-journey main ⇡
+❯ git merge staging
+Updating 45b32f0..4b1e3ae
+Fast-forward
+ four.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+~/Desktop/git-journey main ⇡
+❯ git log --oneline
+4b1e3ae (HEAD -> main, staging, devlopment) conflict solved
+033acf5 i am making a third commit
+9b27ec9 i am making a third commit
+45b32f0 merging devlopment in main
+32a39f6 i am making a third commit
+6c966d3 i am making a third commit
+75198ee i am making a second commit
+4299fe1 (origin/main, origin/HEAD) add Create two.txt
+9d08d2b add Create one.txt
+
+~/Desktop/git-journey main ⇡
+❯ git add .
+
+~/Desktop/git-journey main* ⇡
+❯ git commit -m"con"
+[main da76875] con
+ 1 file changed, 1 insertion(+)
+
+~/Desktop/git-journey main ⇡
+❯ git log --oneline
+da76875 (HEAD -> main) con
+4b1e3ae (staging, devlopment) conflict solved
+033acf5 i am making a third commit
+9b27ec9 i am making a third commit
+45b32f0 merging devlopment in main
+32a39f6 i am making a third commit
+6c966d3 i am making a third commit
+75198ee i am making a second commit
+4299fe1 (origin/main, origin/HEAD) add Create two.txt
+9d08d2b add Create one.txt
+
+~/Desktop/git-journey main ⇡
+❯ git checkout 45b32f0
+Note: switching to '45b32f0'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 45b32f0 merging devlopment in main
+
+~/Desktop/git-journey devlopment~2
+❯ git checkout main
+Previous HEAD position was 45b32f0 merging devlopment in main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 8 commits.
+  (use "git push" to publish your local commits)
+
+~/Desktop/git-journey main ⇡
+❯ git log --oneline
+da76875 (HEAD -> main) con
+4b1e3ae (staging, devlopment) conflict solved
+033acf5 i am making a third commit
+9b27ec9 i am making a third commit
+45b32f0 merging devlopment in main
+32a39f6 i am making a third commit
+6c966d3 i am making a third commit
+75198ee i am making a second commit
+4299fe1 (origin/main, origin/HEAD) add Create two.txt
+9d08d2b add Create one.txt
+
+~/Desktop/git-journey main ⇡
+❯ git diff 32a39f6 45b32f0
+diff --git a/three.txt b/three.txt
+new file mode 100644
+index 0000000..2bdf67a
+--- /dev/null
++++ b/three.txt
+@@ -0,0 +1 @@
++three
+
+~/Desktop/git-journey main ⇡
+❯ q
+fish: Unknown command: q
+
+~/Desktop/git-journey main ⇡
+❯ git push origin main
+Username for 'https://github.com': Half-Onion
+Password for 'https://Half-Onion@github.com':
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/Half-Onion/git-journey.git/'
+
+~/Desktop/git-journey main ⇡ 21s
+❯ git push origin main
+Username for 'https://github.com': Half-Onion
+Password for 'https://Half-Onion@github.com':
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/Half-Onion/git-journey.git/'
+
+~/Desktop/git-journey main ⇡ 7s
+❯ git push origin main
+Username for 'https://github.com': Half-Onion
+Password for 'https://Half-Onion@github.com':
+remote: Permission to Half-Onion/git-journey.git denied to Half-Onion.
+fatal: unable to access 'https://github.com/Half-Onion/git-journey.git/': The requested URL returned error: 403
+
+~/Desktop/git-journey main ⇡ 10s
+❯ git push origin main
+Username for 'https://github.com': Half-Onion
+Password for 'https://Half-Onion@github.com':
+Enumerating objects: 28, done.
+Counting objects: 100% (28/28), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (26/26), 2.17 KiB | 1.09 MiB/s, done.
+Total 26 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), done.
+To https://github.com/Half-Onion/git-journey.git
+   4299fe1..da76875  main -> main
+
+~/Desktop/git-journey main 9s
+❯ git checkout staging
+Switched to branch 'staging'
+
+~/Desktop/git-journey staging
+❯ git push origin staging
+Username for 'https://github.com': Half-Onion
+Password for 'https://Half-Onion@github.com':
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'staging' on GitHub by visiting:
+remote:      https://github.com/Half-Onion/git-journey/pull/new/staging
+remote:
+To https://github.com/Half-Onion/git-journey.git
+ * [new branch]      staging -> staging
+
+~/Desktop/git-journey staging 11s
+❯ git config --show-origin --get-all credential.helper
+
+~/Desktop/git-journey staging
+❯ git config --global credential.helper store
+  git push origin staging
+Username for 'https://github.com':
+Password for 'https://github.com':
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/Half-Onion/git-journey.git/'
+
+~/Desktop/git-journey staging 38s
+❯ git fetch
+
+~/Desktop/git-journey staging
+❯ git merge
+fatal: No remote for the current branch.
+
+~/Desktop/git-journey staging
+❯ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+~/Desktop/git-journey main
+❯ git fetch
+
+~/Desktop/git-journey main
+❯ git merge
+Already up to date.
+
+~/Desktop/git-journey main
+❯ git pull
+Already up to date.
+
+~/Desktop/git-journey main
+❯ git checkout staging
+M	four.txt
+Switched to branch 'staging'
+
+~/Desktop/git-journey staging*
+❯ git status
+On branch staging
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   four.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+~/Desktop/git-journey staging*
+❯ git checkout main
+M	four.txt
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+~/Desktop/git-journey main*
+❯ git stash
+Saved working directory and index state WIP on main: da76875 con
+
+~/Desktop/git-journey main ≡
+❯ git checkout staging
+Switched to branch 'staging'
+
+~/Desktop/git-journey staging ≡
+❯ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+~/Desktop/git-journey main ≡
+❯ git stash pop
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   four.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (8822b0f4ec1130a2c653ba93470e5b2794d8d724)
+
+~/Desktop/git-journey main*
+❯ git stash apply
+No stash entries found.
+
+~/Desktop/git-journey main*
+❯ git stash list
+
+~/Desktop/git-journey main*
+❯ git stash pop stash@{0}
+error: stash@{0} is not a valid reference
+
+~/Desktop/git-journey main*
+❯ git stash drop
+No stash entries found.
+
+~/Desktop/git-journey main*
+❯ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   four.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+~/Desktop/git-journey main*
+❯ git stash
+Saved working directory and index state WIP on main: da76875 con
+
+~/Desktop/git-journey main ≡
+❯ git stash list
+stash@{0}: WIP on main: da76875 con
+
+~/Desktop/git-journey main ≡
+❯ git stash pop
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   four.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (791cf3bad6a128808a897bf64368e8aecde95a1f)
+
+~/Desktop/git-journey main*
+❯ git stash list
+
+~/Desktop/git-journey main*
+❯ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   four.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+~/Desktop/git-journey main*
+❯ git stash
+Saved working directory and index state WIP on main: da76875 con
+
+~/Desktop/git-journey main ≡
+❯ git stash list
+stash@{0}: WIP on main: da76875 con
+
+~/Desktop/git-journey main ≡
+❯ git stash pop
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   four.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (f3923af095a1fe1ad711025776342921b21fdadb)
+
+~/Desktop/git-journey main*
+❯ git stash list
+
+~/Desktop/git-journey main*
+❯ git stash
+Saved working directory and index state WIP on main: da76875 con
+
+~/Desktop/git-journey main ≡
+❯ git stash
+No local changes to save
+
+~/Desktop/git-journey main ≡
+❯ git stash list
+stash@{0}: WIP on main: da76875 con
+
+~/Desktop/git-journey main ≡
+❯ git stash apply
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   four.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+~/Desktop/git-journey main* ≡
+❯ git stash list
+stash@{0}: WIP on main: da76875 con
+
+~/Desktop/git-journey main* ≡
+❯ git revert
+usage: git revert [--[no-]edit] [-n] [-m <parent-number>] [-s] [-S[<keyid>]] <commit>...
+   or: git revert (--continue | --skip | --abort | --quit)
+
+    --quit                end revert or cherry-pick sequence
+    --continue            resume revert or cherry-pick sequence
+    --abort               cancel revert or cherry-pick sequence
+    --skip                skip current commit and continue
+    --[no-]cleanup <mode> how to strip spaces and #comments from message
+    -n, --no-commit       don't automatically commit
+    --commit              opposite of --no-commit
+    -e, --[no-]edit       edit the commit message
+    -s, --[no-]signoff    add a Signed-off-by trailer
+    -m, --[no-]mainline <parent-number>
+                          select mainline parent
+    --[no-]rerere-autoupdate
+                          update the index with reused conflict resolution if possible
+    --[no-]strategy <strategy>
+                          merge strategy
+    -X, --[no-]strategy-option <option>
+                          option for merge strategy
+    -S, --[no-]gpg-sign[=<key-id>]
+                          GPG sign commit
+    --[no-]reference      use the 'reference' format to refer to commits
+
+
+~/Desktop/git-journey main* ≡
+❯ git --revert
+unknown option: --revert
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+~/Desktop/git-journey main* ≡
+❯ git checkout staging
+M	four.txt
+Switched to branch 'staging'
+
+~/Desktop/git-journey staging* ≡
+❯ git add .
+
+~/Desktop/git-journey staging* ≡
+❯ git commit -m"con"
+[staging 0e03116] con
+ 2 files changed, 2 insertions(+)
+
+~/Desktop/git-journey staging ≡
+❯ git status
+On branch staging
+nothing to commit, working tree clean
+
+~/Desktop/git-journey staging ≡
+❯ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+~/Desktop/git-journey main ≡
+❯
